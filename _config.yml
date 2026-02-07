@@ -1,0 +1,65 @@
+# GitHub Pages Configuration
+title: "NEXSUS - Evolution Future"
+description: "Piattaforma innovativa per lo sviluppo professionale e networking"
+url: "https://username.github.io"
+baseurl: "/nexsus-website"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# SEO
+author: "NEXSUS Team"
+twitter:
+  username: nexsus_official
+facebook:
+  app_id: 
+  publisher: 
+  admins: 
+
+# Analytics
+google_analytics: 
+
+# Social links
+social:
+  name: NEXSUS
+  links:
+    - https://facebook.com/nexsus
+    - https://instagram.com/nexsus
+    - https://youtube.com/nexsus
